@@ -1,0 +1,13 @@
+#buttonMainMenu {
+    margin-left: 1rem;
+    border-radius: 20px;
+}
+#linkMainMenu {
+    color: white;
+}
+
+#bookListener {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
