@@ -12,7 +12,7 @@
 </head>
 <body >
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <nav class="navbar navbar-expand-lg" id="bgNav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Biblioteca ISP20</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,11 +21,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <button type="button" class="btn btn-primary btn-sm" id="buttonMainMenu"><a id="linkMainMenu" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">Iniciar sesión</a></button>
+                    <button type="button" class="btn btn-sm" id="buttonSesion"><a id="linkSesion" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
+                        Log in
+                    </a></button>
                   </li>
                   <li class="nav-item">
-                    <button type="button" class="btn btn-dark btn-sm" id="buttonMainMenu"><a id="linkMainMenu" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
-                        Registrarse
+                    <button type="button" class="btn btn-sm" id="buttonRegister"><a id="linkRegister" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
+                        Sign up
                     </a></button>
                   </li>
                 </ul>
@@ -34,7 +36,7 @@
     </nav>
 
     <!-- add button -->
-    <div class="container-lg p-2">
+    <div class="container-lg mb-2">
         <div class="d-grid gap-2">
             <button class="btn btn-dark" type="button" data-bs-toggle="modal" 
             data-bs-target="#addBooksModal">
@@ -74,7 +76,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
-                            <input type="text" id="txtAuthor" class="form-control" placeholder="Author" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" id="txtAuthor" class="form-control" placeholder="Autor" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-building"></i></span>
@@ -82,14 +84,15 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-blockquote-right"></i></i></span>
-                            <input type="text" id="txtSynopsis" class="form-control" placeholder="Synopsis" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" id="txtSynopsis" class="form-control" placeholder="Sinopsis" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-image"></i></i></span>
-                            <input type="file" class="form-control" id="inputGroupFile01">
+                            <input type="text" id="txtFile" class="form-control" placeholder="Link image.jpg" aria-label="Username" aria-describedby="basic-addon1">
+                            <!-- <input type="file" class="form-control" id="txtFile"> -->
                         </div>
 
-                        <input type="submit" value="Enviar" class="form-control btn btn-primary" onclick="applibros.agregarLibro();">
+                        <input type="submit" value="Enviar" class="form-control btn btn-primary" onclick="appBooks.addBook();">
 
                     </form>
                 </div>
@@ -98,6 +101,13 @@
     </div>
 
     <!-- edit book -->
+
+    <!-- Footer -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-5">
+        <div class="container text-danger-emphasis">
+          <p>Copyright 2023 - Instituto Superior de Profesorado N°20</p>
+        </div>
+    </nav>
 
 </body>
 </html>
