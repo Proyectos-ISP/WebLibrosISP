@@ -1,13 +1,66 @@
-#buttonMainMenu {
-    margin-left: 1rem;
-    border-radius: 20px;
+#buttonSesion {
+    cursor: pointer;
+    display: inline-flex;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 6px;
+    background-color: #F2F3F5;
 }
-#linkMainMenu {
-    color: white;
+#buttonRegister {
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 6px;
+    margin: 0px 0px 0px 16px;
+    background-color: #8B3DFF;
 }
 
+#linkSesion {
+    color: black;
+    font-weight: bold;
+}
+#linkRegister {
+    color: white;
+    font-weight: bold;
+}
+
+#bgNav {
+    padding: 8px 0px;
+    box-sizing: content-box;
+    box-shadow: 0px 2px 2px rgba(77, 77, 77, 0.2);
+    margin-bottom: 2rem;
+
+}
+
+#card-image{
+    height: 450px;
+}
+
+#card-bdy {
+    height: 200px;
+}
+
+#card-main {
+    box-sizing: content-box;
+    box-shadow: 2px 2px 2px rgba(77, 77, 77, 0.2);
+    
+}
 #bookListener {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+#buttonSesion:hover{
+    background-color: #e2e3e4;
+    transition: background-color 0.3s;
+}
+
+#buttonRegister:hover{
+    background-color: #a469fc;
+    transition: background-color 0.3s;
+}
+#linkSesion:hover {
+    transition: color 0.5s;
 }
