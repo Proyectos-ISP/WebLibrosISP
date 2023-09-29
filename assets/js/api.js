@@ -21,7 +21,7 @@ const appBooks = {
                                 <h8 class="card-text">${book.gender}
                                 <br>
                                 <br>
-                                <button class="btn btn-dark" id="buttonShowMore" id="btn-showmore" type="button" data-bs-toggle="modal" data-bs-target="#showmoreBooksModal"><i class="bi bi-eye"></i></i> 
+                                <button class="btn btn-dark" id="buttonShowMore" id="btn-showmore" type="button" data-bs-toggle="modal" data-bs-target="#showInfoModal"><i class="bi bi-eye"></i></i> 
                                 Ver más
                                 </button>
                             </div>

@@ -1,5 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 #buttonSesion {
-    cursor: pointer;
     display: inline-flex;
     border: 2px solid transparent;
     box-sizing: border-box;
@@ -33,6 +35,14 @@
 
 }
 
+#btn-addBook {
+    border: 2px solid transparent;
+    font-weight: normal;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 6px 6px;
+}
+
 #card-image{
     height: 450px;
 }
@@ -63,4 +73,9 @@
 }
 #linkSesion:hover {
     transition: color 0.5s;
+}
+
+#btn-addBook:hover {
+    background-color:#8B3DFF ;
+    transition: background-color 0.5s;
 }
