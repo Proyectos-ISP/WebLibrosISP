@@ -120,6 +120,14 @@ const appBooks = {
                     </div>
                 </div>
             </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-warning" id="btn-edit" type="button" data-bs-toggle="modal" data-bs-target="#editBookModal" onclick=""><i class="bi bi-pencil"></i> 
+                Editar
+                </button>
+                <button class="btn btn-danger" id="buttonShowMore" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick=""><i class="bi bi-trash"></i>
+                Eliminar
+                </button>
+            </div>
             `;
             conteiner.innerHTML = htmlConteiner;
         });

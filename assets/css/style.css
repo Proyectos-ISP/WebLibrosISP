@@ -32,6 +32,14 @@
 
 }
 
+#btn-edit {
+    background-color: #ffcd03;
+}
+#btn-edit:hover{
+    background-color: #ddb203;
+}
+
+
 #btn-addBook {
     border: 2px solid transparent;
     font-weight: normal;
